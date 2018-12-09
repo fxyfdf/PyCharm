@@ -1,4 +1,8 @@
 
+常用内建模块：
+https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431937554888869fb52b812243dda6103214cd61d0c2000
 
 use_htmlparser.py
-use_itertools.py
+use_itertools.py   操作迭代对象的函数
+use_sax  操作 xml
+use_urllib  urllib 提供了一系列 用于操作 URL 的功能

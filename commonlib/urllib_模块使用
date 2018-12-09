@@ -1,0 +1,30 @@
+urllib 模块的使用
+1 基本用法
+urllib.request.urlopen(url,data=None,[timeout]*,cafile=None,capth=None,cadefault=Flase,context=None)
+
+-  url: 需要打开的网址
+-  data: Post 提交的数据
+-  timeout: 设置网站的访问超时时间
+
+直接使用 urllib.request 模块的urlopen() 获取页面，page 的数据格式为 bytes 类型，需要decode（） 解码，转换成str类型
+
+from urllib import request
+response = request.urlopen(r'http://python.org/') # HTTPResponse 类型
+page = response.read()
+page = page.decode('utf-8')
+
+urlopen 返回对象提供方法：
+- read() readline() readlines() fileno() close() : 对HTTPResponse 类型数据进行操作
+- info(): 返回HTTPMessage 对象，表示远程服务返回的头数据
+- getcode() 返回http 状态码。如果是 HTTP 请求，200 请求成功；404 网址未找到
+- geturl(): 返回请求url
+
+
+
+
+
+
+
+
+
+
